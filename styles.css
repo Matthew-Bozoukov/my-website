@@ -262,7 +262,6 @@ section {
 }
 
 /* Control buttons */
-#theme-toggle,
 #toggle-navigation-menu {
     display: flex;
     align-items: center;
@@ -279,41 +278,29 @@ section {
     -webkit-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    z-index: 200;
+    position: relative;
 }
 
-#theme-toggle:hover,
 #toggle-navigation-menu:hover {
     background-color: color-mix(in srgb, var(--color-accent-2) 20%, transparent);
     transform: scale(1.05);
 }
 
-#theme-toggle svg,
 #toggle-navigation-menu svg {
     height: 1rem;
     width: 1rem;
-}
-
-#toggle-navigation-menu {
-    z-index: 200;
-    position: relative;
 }
 
 @media (min-width: 640px) {
     #toggle-navigation-menu { display: none; }
 }
 
-/* Theme icon toggling */
+/* Hamburger / close icon toggling */
 #toggle-navigation-menu[aria-expanded="false"] svg:first-of-type { display: block; }
 #toggle-navigation-menu[aria-expanded="false"] svg:last-of-type  { display: none; }
 #toggle-navigation-menu[aria-expanded="true"]  svg:first-of-type { display: none; }
 #toggle-navigation-menu[aria-expanded="true"]  svg:last-of-type  { display: block; }
-
-[data-theme="dark"] .sun-icon { display: block; }
-[data-theme="dark"] .moon-icon { display: none; }
-[data-theme="light"] .sun-icon { display: none; }
-[data-theme="light"] .moon-icon { display: block; }
-:root .sun-icon { display: none; }
-:root .moon-icon { display: block; }
 
 /* ============================================================
    Prose / typography
