@@ -7,18 +7,6 @@
     <meta name="description" content="Matthew Bozoukov — software engineer. Projects, experience, and contact.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-        // Set theme before first paint to avoid a flash
-        (function () {
-            try {
-                var saved = localStorage.getItem('theme');
-                var theme = saved === 'dark' || saved === 'light' ? saved : 'light';
-                document.documentElement.setAttribute('data-theme', theme);
-            } catch (e) {
-                document.documentElement.setAttribute('data-theme', 'light');
-            }
-        })();
-    </script>
 </head>
 <body>
     <!-- Fixed Header -->
@@ -44,21 +32,10 @@
                 <a href="#projects">Projects</a>
                 <a href="#blog">Blog</a>
                 <a href="#resume">Résumé</a>
-                <a href="#contact">Contact</a>
             </nav>
 
             <!-- Controls -->
             <div class="header-controls">
-                <!-- Theme Toggle -->
-                <button id="theme-toggle" aria-label="Switch to dark theme">
-                    <svg class="sun-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="moon-icon" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                    </svg>
-                </button>
-
                 <!-- Mobile Menu Toggle -->
                 <button id="toggle-navigation-menu" aria-expanded="false" aria-label="Toggle navigation menu">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -243,19 +220,6 @@
                             Education, notable coursework, or a thesis in a sentence.
                         </p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <div class="prose">
-                <h2 class="title">Contact</h2>
-                <p>The best ways to reach me. Update these links with your own.</p>
-                <div class="contact-links">
-                    <a href="mailto:matthewbozoukov123@gmail.com">✉️ Email</a>
-                    <a href="https://github.com/" target="_blank" rel="noopener">💻 GitHub</a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener">🔗 LinkedIn</a>
                 </div>
             </div>
         </section>
